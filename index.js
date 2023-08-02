@@ -26,5 +26,9 @@ function getter(res){
       // ...and/or process the entire body here.
     })
   });
+  req.on('error', function(e) {
+    res.send('ERROR: ' + e.message);
+  });
 }
+
 app.listen(3000)
