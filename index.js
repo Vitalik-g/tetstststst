@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 var http = require('http');
 var options = {
-  host: 'test-server:3000',
+  host: 'test-server',
   path: '/'
 };
 
